@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeremy Toussaint | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e293b, transparent 70%);
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(2,6,23,0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #1f2937;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      margin: 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 0.5rem;
+      transition: background 0.2s;
+    }
+    nav a:hover {
+      background: #1e293b;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      animation: fadeUp 0.6s ease both;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+    .card {
+      background: linear-gradient(180deg, #020617, #020617) padding-box,
+                  linear-gradient(135deg, #38bdf8, transparent) border-box;
+      border: 1px solid transparent;
+      border-radius: 1rem;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      color: #bae6fd;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin: 0.2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.6rem 1rem;
+      border-radius: 0.75rem;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #020617;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      color: var(--muted);
+    }
+    .scroll-indicator {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(15,23,42,0.8);
+      border: 1px solid #1f2937;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+  </style>
+</head>
+<body>
+
+<header id="top">
+  <h1>Jeremy Toussaint</h1>
+  <p>Highly motivated Diploma graduate in Business & Law with experience in data entry, customer service, and administrative support. Clean, modern, and PDF-ready portfolio.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#documents">Documents</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Highly motivated and results-oriented recent graduate with a <strong>Diploma in Business & Law</strong> and proven experience in <strong>data entry</strong> and <strong>customer service</strong>. Seeking entry-level opportunities across varying industries to apply strong work ethic, attention to detail, and communication skills.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <div class="card">
+    <h3>Data Entry Clerk <span class="tag">2024 – 2025</span></h3>
+    <p>Ministry of Health (Contract – 6 months)</p>
+    <ul>
+      <li>Entered and updated large volumes of data with speed and accuracy</li>
+      <li>Maintained confidentiality and organized digital records</li>
+      <li>Used Microsoft Office, Excel, and tailored government databases</li>
+      <li>Met weekly and monthly reporting deadlines</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Cashier <span class="tag">2024</span></h3>
+    <p>Customer Service Role (1–2 months)</p>
+    <ul>
+      <li>Provided fast and friendly service in a high-paced environment</li>
+      <li>Handled cash and card payments accurately</li>
+      <li>Operated POS systems and supported team operations</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Diploma in Business & Law</h3>
+      <p>ST. Joseph College <span class="tag">2018 – 2022</span></p>
+      <p>Key Subjects:</p>
+      <ul>
+        <li>Principles of Business – Grade 1</li>
+        <li>Principles of Accounts – Grade 3</li>
+        <li>Office Administration – Grade 1</li>
+        <li>Electronic Documentation & Preparation Management – Grade 3</li>
+        <li>English A – Grade 2</li>
+        <li>Mathematics – Grade 3</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Primary Education</h3>
+      <p>Cunupia Government Primary School <span class="tag">2013 – 2017</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <span class="tag">Attention to Detail</span>
+    <span class="tag">Customer Service</span>
+    <span class="tag">Time Management</span>
+    <span class="tag">Communication</span>
+    <span class="tag">Multitasking</span>
+    <span class="tag">Basic Computer Skills</span>
+    <span class="tag">Microsoft Office</span>
+    <span class="tag">Excel</span>
+  </div>
+</section>
+
+<section id="documents">
+  <h2>Documents</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Resume</h3>
+      <a class="btn" href="Toussaint_Resume.pdf" download>Download Resume (PDF)</a>
+    </div>
+    <div class="card">
+      <h3>Testimonial One</h3>
+      <a class="btn" href="Testimonial_One.pdf" download>Download Testimonial (PDF)</a>
+    </div>
+    <div class="card">
+      <h3>Testimonial Two</h3>
+      <a class="btn" href="Testimonial_Two.pdf" download>Download Testimonial (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Phone:</strong> (868) 265-6738</p>
+    <p><strong>Email:</strong> jeremttouss.jt@gmail.com</p>
+    <p><strong>Address:</strong> #19 Clarke Street, Railway Road, Enterprise, Chaguanas</p>
+    <p style="margin-top:1rem;color:var(--muted);">QR code placeholder for quick mobile contact (ready for integration).</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Jeremy Toussaint · Single-page, mobile-friendly & PDF-ready</p>
+</footer>
+
+<div class="scroll-indicator">Scroll ↓</div>
+
+</body>
+</html>
